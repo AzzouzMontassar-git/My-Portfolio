@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>E-learning Platform - Portfolio Details</title>
+  <meta content="E-learning platform details" name="description">
+  <meta content="E-learning, Angular, Spring Boot, MySQL, Online Education" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .portfolio-details-slider {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 25px;
+      height: 0;
+      margin-bottom: 30px;
+    }
+    .portfolio-details-slider .swiper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .portfolio-details-slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .tech-badge {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <!-- Header -->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/1752105162895.png" alt="Profile" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Azzouz Montassar</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="github"><i class="bi bi-github"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">E-learning Platform – Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">E-learning Platform</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Image Slider Section -->
+        <div class="portfolio-details-slider">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": { "delay": 5000 },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/9f4d72fa-1485-4a02-9886-0088dc535997.jpg" alt="E-learning Homepage" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/e-learning-dashboard.png" alt="Student Dashboard" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/e-learning-admin.png" alt="Admin Panel" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/e-learning-courses.png" alt="Course Management" class="img-fluid">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <!-- Description -->
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2>E-learning Web Application</h2>
+
+              <p>
+                <strong>E-learning Platform</strong> is a comprehensive online education solution developed during my internship at "Les Jeunes Codeurs" association. The application provides an interactive learning environment with separate interfaces for students and administrators.
+              </p>
+
+              <p>
+                The platform was designed to address the lack of specialized e-learning solutions in our local market. While global platforms like Coursera and Udemy exist, we aimed to create a tailored solution for our regional needs, offering a user-friendly interface for students to discover and enroll in courses, while providing administrators with robust management tools.
+              </p>
+
+              <h4>Key Features</h4>
+              <ul>
+                <li><strong>Student Portal:</strong> Browse available courses, filter by category/level/dates, enroll online, and access course content</li>
+                <li><strong>Admin Dashboard:</strong> Manage user accounts, courses, chapters, and monitor student enrollments</li>
+                <li><strong>Course Management:</strong> Add/edit courses and organize content into chapters</li>
+                <li><strong>User Management:</strong> Handle student registrations and profiles</li>
+              </ul>
+
+              <h4>Technical Implementation</h4>
+              <p>
+                The application follows a 3-tier architecture with clear separation between presentation, business logic, and data layers:
+              </p>
+              <ul>
+                <li><strong>Frontend:</strong> Developed with Angular 14 using the MVVM pattern for clean separation of concerns</li>
+                <li><strong>Backend:</strong> Built with Spring Boot following a layered architecture (Web, Service, Repository, Model)</li>
+                <li><strong>Database:</strong> MySQL for data persistence</li>
+              </ul>
+
+              <h4>Methodology</h4>
+              <p>
+                The project was developed using Agile (Scrum) methodology, with regular sprints and stakeholder feedback incorporated throughout the development process. This approach ensured we could adapt to changing requirements while maintaining project timelines.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Info -->
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web Application / Education</li>
+                <li><strong>Technologies</strong>: 
+                  <span class="badge bg-primary tech-badge">Angular 14</span>
+                  <span class="badge bg-primary tech-badge">Spring Boot</span>
+                  <span class="badge bg-primary tech-badge">MySQL</span>
+                  <span class="badge bg-primary tech-badge">Bootstrap</span>
+                  <span class="badge bg-primary tech-badge">TypeScript</span>
+                  <span class="badge bg-primary tech-badge">Java</span>
+                  <span class="badge bg-primary tech-badge">REST API</span>
+                </li>
+                <li><strong>Project Date</strong>: September, 2024</li>
+                <li><strong>Development Tools</strong>: Spring Tools Suite (STS), XAMPP, GitHub, Ngrok</li>
+                <li><strong>GitHub</strong>: <a href="#">(GitHub link coming soon)</a></li>
+              </ul>
+
+              <h3 class="mt-4">Key Functionalities</h3>
+              <ul>
+                <li>User authentication (Admin/Student)</li>
+                <li>Course browsing and filtering</li>
+                <li>Online enrollment system</li>
+                <li>Course content management</li>
+                <li>Student progress tracking</li>
+                <li>Admin dashboard with analytics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Azzouz Montassar</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top & Scripts -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
